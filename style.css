@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding: 0;
+   }
+    header{
+        background-color:#36013f;
+        height: 119vh;
+        width: 98vw;
+        overflow: hidden;
+        background-size: cover;
+      }
+          /*Navbar styling  */
+    nav{
+        height: 80px;
+        background-color: #65344e;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        padding:0px 50px 0px 100px;
+    }
+    .logo{
+        font-size: 38px;
+        font-weight: 600;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        
+    }
+    nav ul li{
+        margin: 0 10px;
+    }
+   
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .request{
+        border: 2px solid white;
+        border-radius: 8px;
+
+    }
+    nav ul li a:hover{
+        color:cyan;
+        text-decoration: underline;
+    }
+    .request:hover{
+        border: 2px solid white;
+        border-radius: 8px;
+        background-color:  cyan;
+        color: black;
+
+    }
+                
+                    
+    nav .menu-btn i{
+        color: white;
+       font-size: 22px;
+       cursor: pointer;
+       display: none;
+    }                
+    #click{
+     display: none;
+}            
+    #click:checked~.menu-btn i:before{
+      content:"\f00d";
+}
+/* Navbar styling ends */
+
+/* Poster styling start */
+    .cont{
+     display: flex;
+     flex-direction: row;
+
+}
+    .postercontent{
+      color: white;
+      text-align: center;
+
+}
+   .postercontent p{
+   font-size: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: relative;
+   top: 2%;
+   left: 10%;
+}
+  .postercontent span{
+    color: rgba(220, 20, 20, 0.733);
+    text-decoration: underline;
+}
+  .posterimage{
+    display: flex;
+    flex-direction: row;
+    
+}
+  .image1{
+    height: 400px;
+    width: 420px;
+    position: relative;
+    top: 20%;
+    left: 23%;
+}
+    .image2{
+ height: 290px;
+ width: 290px;
+ position: relative;
+ top: 33%;
+ left: -10%;
+ animation-name: example;
+ animation-duration: 4s;
+ animation-iteration-count: infinite;
+}
+  @keyframes example {
+   0%{
+       position: relative;
+       top: 35%;
+   }
+   100%{
+    position: relative;
+    top: 31%;
+  }
+}
+  
+  .image3{
+    height: 280px;
+    width: 260px;
+    position: relative;
+    top: 33%;
+    left:-19%;
+    animation-name: example;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   }
+   @keyframes example {
+    0%{
+        position: relative;
+        top: 31%;
+    }
+    100%{
+     position: relative;
+     top: 35%;
+   }
+ }
+    .image4{
+     position: relative;
+     top: 2%;
+     left: -43%;
+     height: 150px;
+     width: 200px;
+ }
+    .image5{
+     position: relative;
+     top: 19%;
+     left:-60%;
+     height: 30px;
+     width: 30px;
+ }
+   .image6{
+    position: relative;
+    top: 90%;
+    left:-54%;
+    height: 50px;
+    width: 50px;
+ 
+ }
+   .image7{
+    position: relative;
+    top: 95%;
+    left:-68%;
+    height: 65px;
+    width: 80px;
+ 
+ }
+    .btn h3{
+   margin-left: 4px;
+   color:blanchedalmond;
+ }
+    #blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+    @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+   .btn1{
+     height: 50px;
+     width: 140px;
+     background-color: cornflowerblue ;
+     border-radius: 10px ;
+
+ }
+   .btn2{
+    height: 50px;
+    width: 140px;
+    background-color: cornflowerblue ;
+    border-radius: 10px ;
+}
+   #blinks {
+    animation: blinks-animation 1s steps(5, start) infinite;
+    -webkit-animation: blinks-animation 1s steps(5, start) infinite;
+  }
+   @keyframes blinks-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+    @-webkit-keyframes blinks-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+   .btn2 a{
+    text-decoration: none;
+}
+/* Poster styling ends */
+
+/* For Responsive site */
+@media (max-width: 940px){
+    
+    nav .menu-btn i{
+    display: block;
+      }
+    #click:checked~ul{
+        left: 0%;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -1000px;
+        background:black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+   nav ul li{
+        margin: 45px 0;
+    }
+}
